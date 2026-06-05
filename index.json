@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "name": "U1 Motion Tweaks",
+  "publisher": "PLACEHOLDER",
+  "updated": "2026-05-18",
+  "plugins": [
+    {
+      "name": "klipper-motion",
+      "title": "Smoother Motion",
+      "version": "0.1.2",
+      "description": "Brings your printer's motion engine up to date with the newest Klipper improvements, so prints come out cleaner with nothing to set up.\n\nWhat you get:\n• Less ghosting and ringing: smarter resonance measurement plus a gentle new 'sweeping vibrations' test make input-shaper calibration more accurate, so the faint echo lines after sharp edges shrink.\n• Smoother corners: improved cornering math keeps fast moves accurate and a little quieter.\n• Snappier moves: the motion planner reacts a touch faster, trimming small stutters on detailed models.\n\nWhat you'll notice: cleaner surfaces, fewer ghost marks, and smoother, quieter movement. It just updates the engine under the hood. Advanced users can re-run input-shaper calibration to get the most out of it.\n\nUnder the hood this updates Klipper's own program files on the printer. Uninstalling puts the originals back, and it re-applies itself automatically after a firmware update. Snapmaker U1 only.",
+      "tagline": "Cleaner surfaces and quieter moves, from the latest Klipper motion code.",
+      "category": "tuning",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-04-10",
+      "updated_at": "2026-05-18",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "klipper-motion"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/klipper-motion/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/439285482",
+      "deps": []
+    },
+    {
+      "name": "tmc-autotune",
+      "title": "TMC Auto-Tuned",
+      "version": "0.1.1",
+      "description": "Applies optimized TMC2240 driver settings (StealthChop tuning, CoolStep, hysteresis) to the X and Y steppers, from Argolein's SnapmakerU1 custom config. These modify low-level driver registers, so monitor motor temperatures on first use. Works only on the Snapmaker U1.",
+      "tagline": "Argolein's optimized TMC2240 driver parameters for X/Y.",
+      "category": "tuning",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-02-10",
+      "updated_at": "2026-03-20",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "tmc-autotune"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/tmc-autotune/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/439285527",
+      "deps": []
+    },
+    {
+      "name": "tmc-low-current",
+      "title": "TMC Low Current",
+      "version": "0.1.1",
+      "description": "Lowers the X and Y TMC2240 run current from 1.2 to 1.0 A for less heat and quieter motion. May skip steps under heavy load or fast moves; watch for layer shifts and raise the current again if motion suffers. Works only on the Snapmaker U1.",
+      "tagline": "Cooler, quieter X/Y motion at reduced stepper current.",
+      "category": "tuning",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-02-10",
+      "updated_at": "2026-02-10",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "tmc-low-current"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/tmc-low-current/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/439285546",
+      "deps": []
+    }
+  ],
+  "lists": []
+}
