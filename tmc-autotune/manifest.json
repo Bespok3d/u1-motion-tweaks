@@ -1,0 +1,44 @@
+{
+  "name": "tmc-autotune",
+  "title": "TMC Auto-Tuned",
+  "version": "0.1.1",
+  "description": "Applies optimized TMC2240 driver settings (StealthChop tuning, CoolStep, hysteresis) to the X and Y steppers, from Argolein's SnapmakerU1 custom config. These modify low-level driver registers, so monitor motor temperatures on first use. Works only on the Snapmaker U1.",
+  "tagline": "Argolein's optimized TMC2240 driver parameters for X/Y.",
+  "category": "tuning",
+  "channel": "stable",
+  "printer_specific": true,
+  "published_at": "2026-02-10",
+  "updated_at": "2026-03-20",
+  "source": "https://github.com/bespok3d-org/plugin-tmc-autotune",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "tmc-autotune"
+    }
+  ],
+  "require": [],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "klipper-generic"
+    ],
+    "variables": []
+  },
+  "permissions": [
+    "klipper-config",
+    "restart"
+  ],
+  "install": {
+    "place": [
+      {
+        "class": "klipper-config",
+        "src": "files/cfg/klipper/tmc-autotune.cfg"
+      }
+    ],
+    "restart": [
+      "klipper"
+    ]
+  },
+  "conflict_resolutions": [],
+  "files": []
+}

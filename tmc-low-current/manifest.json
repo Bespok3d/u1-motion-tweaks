@@ -1,0 +1,44 @@
+{
+  "name": "tmc-low-current",
+  "title": "TMC Low Current",
+  "version": "0.1.1",
+  "description": "Lowers the X and Y TMC2240 run current from 1.2 to 1.0 A for less heat and quieter motion. May skip steps under heavy load or fast moves; watch for layer shifts and raise the current again if motion suffers. Works only on the Snapmaker U1.",
+  "tagline": "Cooler, quieter X/Y motion at reduced stepper current.",
+  "category": "tuning",
+  "channel": "stable",
+  "printer_specific": true,
+  "published_at": "2026-02-10",
+  "updated_at": "2026-02-10",
+  "source": "https://github.com/bespok3d-org/plugin-tmc-low-current",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "tmc-low-current"
+    }
+  ],
+  "require": [],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "klipper-generic"
+    ],
+    "variables": []
+  },
+  "permissions": [
+    "klipper-config",
+    "restart"
+  ],
+  "install": {
+    "place": [
+      {
+        "class": "klipper-config",
+        "src": "files/cfg/klipper/tmc-low-current.cfg"
+      }
+    ],
+    "restart": [
+      "klipper"
+    ]
+  },
+  "conflict_resolutions": [],
+  "files": []
+}

@@ -1,0 +1,80 @@
+{
+  "name": "klipper-motion",
+  "title": "Smoother Motion",
+  "version": "0.1.2",
+  "description": "Brings your printer's motion engine up to date with the newest Klipper improvements, so prints come out cleaner with nothing to set up.\n\nWhat you get:\n\u2022 Less ghosting and ringing: smarter resonance measurement plus a gentle new 'sweeping vibrations' test make input-shaper calibration more accurate, so the faint echo lines after sharp edges shrink.\n\u2022 Smoother corners: improved cornering math keeps fast moves accurate and a little quieter.\n\u2022 Snappier moves: the motion planner reacts a touch faster, trimming small stutters on detailed models.\n\nWhat you'll notice: cleaner surfaces, fewer ghost marks, and smoother, quieter movement. It just updates the engine under the hood. Advanced users can re-run input-shaper calibration to get the most out of it.\n\nUnder the hood this updates Klipper's own program files on the printer. Uninstalling puts the originals back, and it re-applies itself automatically after a firmware update. Snapmaker U1 only.",
+  "tagline": "Cleaner surfaces and quieter moves, from the latest Klipper motion code.",
+  "category": "tuning",
+  "channel": "stable",
+  "printer_specific": true,
+  "published_at": "2026-04-10",
+  "updated_at": "2026-05-18",
+  "source": "https://github.com/bespok3d-org/plugin-klipper-motion",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "klipper-motion"
+    }
+  ],
+  "require": [],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "klipper-generic"
+    ],
+    "variables": []
+  },
+  "permissions": [
+    "klipper-source",
+    "restart"
+  ],
+  "install": {
+    "instrument": [
+      {
+        "class": "klipper-source",
+        "name": "extras/resonance_tester.py",
+        "diff": "files/patches/01_resonance_chip_fix.patch"
+      },
+      {
+        "class": "klipper-source",
+        "name": "toolhead.py",
+        "diff": "files/patches/02_toolhead_centripetal.patch"
+      },
+      {
+        "class": "klipper-source",
+        "name": "toolhead.py",
+        "diff": "files/patches/03_toolhead_junction.patch"
+      },
+      {
+        "class": "klipper-source",
+        "name": "extras/resonance_tester.py",
+        "diff": "files/patches/04a_resonance_sweeping.patch"
+      },
+      {
+        "class": "klipper-source",
+        "name": "extras/shaper_calibrate.py",
+        "diff": "files/patches/04b_shaper_calibrate.patch"
+      },
+      {
+        "class": "klipper-source",
+        "name": "toolhead.py",
+        "diff": "files/patches/04c_toolhead_junction_v2.patch"
+      },
+      {
+        "class": "klipper-source",
+        "name": "toolhead.py",
+        "diff": "files/patches/05_toolhead_lookahead.patch"
+      },
+      {
+        "class": "klipper-source",
+        "name": "extras/resonance_tester.py",
+        "diff": "files/patches/06_resonance_snapmaker_fix.patch"
+      }
+    ],
+    "restart": [
+      "klipper"
+    ]
+  },
+  "conflict_resolutions": [],
+  "files": []
+}
