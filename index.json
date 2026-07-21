@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "U1 Motion Tweaks",
-  "publisher": "PLACEHOLDER",
+  "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
   "updated": "2026-05-18",
   "plugins": [
     {
@@ -12,7 +12,7 @@
       "tagline": "Cleaner surfaces and quieter moves, from the latest Klipper motion code.",
       "category": "tuning",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-04-10",
       "updated_at": "2026-05-18",
@@ -27,7 +27,7 @@
       "conflicts": [],
       "changelog_url": "klipper-motion/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/klipper-motion/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/481343175",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/484994826",
       "deps": []
     },
     {
@@ -38,7 +38,7 @@
       "tagline": "Argolein's optimized TMC2240 driver parameters for X/Y.",
       "category": "tuning",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-02-10",
       "updated_at": "2026-03-20",
@@ -53,7 +53,7 @@
       "conflicts": [],
       "changelog_url": "tmc-autotune/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/tmc-autotune/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/481343212",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/484994856",
       "deps": []
     },
     {
@@ -64,7 +64,7 @@
       "tagline": "Cooler, quieter X/Y motion at reduced stepper current.",
       "category": "tuning",
       "channel": "stable",
-      "publisher": "PLACEHOLDER",
+      "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-02-10",
       "updated_at": "2026-02-10",
@@ -79,7 +79,7 @@
       "conflicts": [],
       "changelog_url": "tmc-low-current/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/tmc-low-current/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/481343245",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/484994885",
       "deps": []
     }
   ],
