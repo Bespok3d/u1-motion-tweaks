@@ -27,7 +27,7 @@
       "conflicts": [],
       "changelog_url": "klipper-motion/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/klipper-motion/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/484994826",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/486304774",
       "deps": []
     },
     {
@@ -53,7 +53,7 @@
       "conflicts": [],
       "changelog_url": "tmc-autotune/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/tmc-autotune/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/484994856",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/486304795",
       "deps": []
     },
     {
@@ -79,7 +79,7 @@
       "conflicts": [],
       "changelog_url": "tmc-low-current/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-teweaks/blob/main/tmc-low-current/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/484994885",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-teweaks/releases/assets/486304821",
       "deps": []
     }
   ],
