@@ -2,6 +2,7 @@
   "name": "tmc-autotune",
   "title": "TMC Auto-Tuned",
   "version": "0.1.1",
+  "author": "bespoked",
   "description": "Applies optimized TMC2240 driver settings (StealthChop tuning, CoolStep, hysteresis) to the X and Y steppers, from Argolein's SnapmakerU1 custom config. These modify low-level driver registers, so monitor motor temperatures on first use. Works only on the Snapmaker U1.",
   "tagline": "Argolein's optimized TMC2240 driver parameters for X/Y.",
   "category": "tuning",

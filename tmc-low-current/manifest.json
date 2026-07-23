@@ -2,6 +2,7 @@
   "name": "tmc-low-current",
   "title": "TMC Low Current",
   "version": "0.1.1",
+  "author": "bespoked",
   "description": "Lowers the X and Y TMC2240 run current from 1.2 to 1.0 A for less heat and quieter motion. May skip steps under heavy load or fast moves; watch for layer shifts and raise the current again if motion suffers. Works only on the Snapmaker U1.",
   "tagline": "Cooler, quieter X/Y motion at reduced stepper current.",
   "category": "tuning",
