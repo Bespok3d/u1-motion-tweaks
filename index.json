@@ -16,6 +16,7 @@
       "printer_specific": true,
       "published_at": "2026-04-10",
       "updated_at": "2026-05-18",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -27,7 +28,7 @@
       "conflicts": [],
       "changelog_url": "klipper-motion/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-tweaks/blob/main/klipper-motion/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/486461229",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/487126489",
       "deps": []
     },
     {
@@ -42,6 +43,7 @@
       "printer_specific": true,
       "published_at": "2026-02-10",
       "updated_at": "2026-03-20",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -53,7 +55,7 @@
       "conflicts": [],
       "changelog_url": "tmc-autotune/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-tweaks/blob/main/tmc-autotune/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/486461248",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/487126516",
       "deps": []
     },
     {
@@ -68,6 +70,7 @@
       "printer_specific": true,
       "published_at": "2026-02-10",
       "updated_at": "2026-02-10",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -79,7 +82,7 @@
       "conflicts": [],
       "changelog_url": "tmc-low-current/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-tweaks/blob/main/tmc-low-current/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/486461260",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/487126551",
       "deps": []
     }
   ],
