@@ -20,6 +20,12 @@ It ships three plugins:
 
 All three are Klipper config and patches, assets and shell only; this repo carries no Python.
 
+It also ships one collection (`kind:collection`, a members list with no payload of its own):
+
+- **performance-pack** - "Performance Pack": tmc-autotune, tmc-low-current, and purge-line-back
+  (the last one lives in the `u1-klipper-config-enhancers` repo; a collection may name a member from
+  another repo).
+
 Read `README.md` for the repo's layout, build, and release mechanics before you change anything.
 
 ## The model: a plugin declares WHAT, never HOW

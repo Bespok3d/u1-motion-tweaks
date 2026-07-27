@@ -1,0 +1,31 @@
+{
+  "kind": "collection",
+  "name": "performance-pack",
+  "title": "Performance Pack",
+  "version": "0.1.0",
+  "author": "bespoked",
+  "description": "Quieter, cooler X/Y motion and a purge line that is out of your way, in one install. TMC Auto-Tuned applies Argolein's optimized TMC2240 driver settings to the X and Y steppers, TMC Low Current drops their run current from 1.2 to 1.0 A for less heat and less noise, and Purge Line at Back moves the start-of-print purge line from the front of the plate to the back, clear of the part. The two driver changes touch different settings, so they work together.\n\nThese are low-level driver changes: watch the motor temperatures on the first print, and if you see a layer shift on a fast or heavy move, remove TMC Low Current and the stock current comes back. Snapmaker U1 only.",
+  "tagline": "Quieter, cooler X/Y motion and a purge line out of your way.",
+  "category": "tuning",
+  "channel": "stable",
+  "printer_specific": true,
+  "source": "https://github.com/Bespok3d/u1-motion-tweaks",
+  "publisher": "PLACEHOLDER",
+  "published_at": "2026-07-27",
+  "updated_at": "2026-07-27",
+  "changelog": "doc/CHANGELOG.md",
+  "members": [
+    {
+      "id": "tmc-autotune",
+      "version": ">=0.1.1"
+    },
+    {
+      "id": "tmc-low-current",
+      "version": ">=0.1.1"
+    },
+    {
+      "id": "purge-line-back",
+      "version": ">=0.1.1"
+    }
+  ]
+}

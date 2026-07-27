@@ -8,6 +8,12 @@ Plugins:
 - **tmc-autotune** - Argolein's optimized TMC2240 driver parameters for X/Y.
 - **tmc-low-current** - Cooler, quieter X/Y motion at reduced stepper current.
 
+Collections (`kind:collection`, no payload of their own, they install a set of plugins in one go):
+
+- **performance-pack** - "Performance Pack": tmc-autotune, tmc-low-current, and purge-line-back.
+  `purge-line-back` ships from the `u1-klipper-config-enhancers` repo; a collection may name a member
+  published by another repo.
+
 ## Layout
 
 ```text
