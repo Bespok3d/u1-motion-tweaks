@@ -2,12 +2,12 @@
   "schema_version": 1,
   "name": "U1 Motion Tweaks",
   "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "plugins": [
     {
       "name": "klipper-motion",
       "title": "Smoother Motion",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "description": "Brings your printer's motion engine up to date with the newest Klipper improvements, so prints come out cleaner with nothing to set up.\n\nWhat you get:\n• Less ghosting and ringing: smarter resonance measurement plus a gentle new 'sweeping vibrations' test make input-shaper calibration more accurate, so the faint echo lines after sharp edges shrink.\n• Smoother corners: improved cornering math keeps fast moves accurate and a little quieter.\n• Snappier moves: the motion planner reacts a touch faster, trimming small stutters on detailed models.\n\nWhat you'll notice: cleaner surfaces, fewer ghost marks, and smoother, quieter movement. It just updates the engine under the hood. Advanced users can re-run input-shaper calibration to get the most out of it.\n\nUnder the hood this updates Klipper's own program files on the printer. Uninstalling puts the originals back, and it re-applies itself automatically after a firmware update. Snapmaker U1 only.",
       "tagline": "Cleaner surfaces and quieter moves, from the latest Klipper motion code.",
       "category": "tuning",
@@ -15,7 +15,7 @@
       "publisher": "679939555819fb5f6423dc68c4388e76bfa9b4e0",
       "printer_specific": true,
       "published_at": "2026-04-10",
-      "updated_at": "2026-05-18",
+      "updated_at": "2026-07-28",
       "author": "bespoked",
       "requires": {
         "capabilities": [
@@ -28,7 +28,7 @@
       "conflicts": [],
       "changelog_url": "klipper-motion/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-tweaks/blob/main/klipper-motion/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/491827821",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/494336527",
       "deps": []
     },
     {
@@ -55,7 +55,7 @@
       "conflicts": [],
       "changelog_url": "tmc-autotune/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-tweaks/blob/main/tmc-autotune/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/491827857",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/494336553",
       "deps": []
     },
     {
@@ -82,7 +82,7 @@
       "conflicts": [],
       "changelog_url": "tmc-low-current/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-motion-tweaks/blob/main/tmc-low-current/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/491827914",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-motion-tweaks/releases/assets/494336587",
       "deps": []
     }
   ],
