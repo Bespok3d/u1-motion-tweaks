@@ -1,5 +1,10 @@
 # u1-motion-tweaks
 
+[![licence](https://img.shields.io/badge/licence-AGPL--3.0-blue)](LICENSE)
+[![release](https://img.shields.io/github/v/release/Bespok3d/u1-motion-tweaks)](https://github.com/Bespok3d/u1-motion-tweaks/releases)
+![printer](https://img.shields.io/badge/printer-Snapmaker%20U1-informational)
+![stock firmware](https://img.shields.io/badge/stock%20firmware-no%20flashing-brightgreen)
+
 A co-repo of Bespok3d plugins for the Snapmaker U1 that publishes its own sub-list.
 
 Plugins:
@@ -100,3 +105,10 @@ build on upstream source material. If you own the source material a plugin is ba
 rather manage it yourself, you are welcome to contact the org to claim it back. The one condition is
 that it stays actively maintained: a claimed plugin left to rot will be reclaimed so users are never
 stranded on an abandoned package.
+
+## Support this project
+
+`tmc-autotune` and `performance-pack` are Bespok3d's own work. `klipper-motion` and `tmc-low-current`
+package software written by other people, and a donation here is not a donation to them.
+
+If our part saved you an afternoon, you can [buy me a coffee](https://buymeacoffee.com/unlucio).
