@@ -50,6 +50,49 @@ Action over the whole repo, which packs each `.b3`, cuts a release per plugin, a
 (`lists/<repo>.json`). Secrets: `MAIN_INDEX_TOKEN` (contents:write on main-index) and
 `REGISTRY_SIGNING_KEY` (the org registry key the `b3-builder` Action signs each `.b3` and atom with).
 
+## Composition
+
+Bespok3d's own code in this repository is under the repository licence below. The works listed here
+are separate works, aggregated with it, each under its own licence. They are not under the repository
+licence.
+
+| Component | Licence | Where its licence text is |
+| --- | --- | --- |
+| The eight Klipper motion patches shipped by `klipper-motion` | GPL-3.0-only | [vendor/klipper-motion-patches/](vendor/klipper-motion-patches/) |
+| The reduced current fragment shipped by `tmc-low-current` | GPL-3.0-only | [vendor/tmc-current-tweak/](vendor/tmc-current-tweak/) |
+
+Both ship at their package path under `<plugin>/files` rather than under `vendor/`, because that is
+the fixed package payload root; each `vendor/` directory records where its files are and what, if
+anything, Bespok3d changed in them.
+
+The `tmc-autotune` config carries 38 TMC2240 parameter values that are not Bespok3d's. They reached
+the U1 through the Extended Firmware overlay `32-feature-klipper-tweaks`, whose own file header names
+Argolein's SnapmakerU1-CustomConfig as their origin. That repository declares no licence, so nothing
+of theirs is copied: the file that carries the values was written by the Bespok3d project against the
+register field names Klipper documents, and that file alone is under the repository licence. Its
+`doc/ATTRIBUTIONS.md` records the evidence for every part of this.
+
+## Licence
+
+Copyright (C) 2026 unlucio and the Bespok3d contributors
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU
+Affero General Public License as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero
+General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this program. If
+not, see <https://www.gnu.org/licenses/>. The full text is in [LICENSE](LICENSE).
+
+Bespok3d is a project of the Bespok3d Organisation, which is not a legal entity. Copyright is held by
+the individual authors named above.
+
+This licence covers Bespok3d's own code. It does not cover the separate works listed under
+Composition, which keep their own licences.
+
 ## Maintainership
 
 These plugins are published and maintained by the Bespok3d org, and several of them repackage or

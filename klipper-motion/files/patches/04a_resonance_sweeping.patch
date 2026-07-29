@@ -1,3 +1,15 @@
+From 352a5bac393d53f90e1496ed71330fdc37365a7e Mon Sep 17 00:00:00 2001
+From: Dmitry Butyugin <dmbutyugin@google.com>
+Date: Fri, 6 Dec 2024 11:54:26 +0900
+Subject: [PATCH] resonance_tester: Added a new sweeping_vibrations resonance
+ test method (#6723)
+
+This adds a new resonance test method that can help if a user has some mechanical problems with the printer.
+
+Signed-off-by: Dmitry Butyugin <dmbutyugin@google.com>
+
+Modified by the Bespok3d project on 2026-07-28: split out of 04_16b4b6b30.patch; this part carries only the klippy/extras/resonance_tester.py change.
+---
 diff --git a/klippy/extras/resonance_tester.py b/klippy/extras/resonance_tester.py
 index d6048cddf..9b8bbf449 100644
 --- a/klippy/extras/resonance_tester.py

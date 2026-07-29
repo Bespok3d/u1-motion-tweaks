@@ -21,4 +21,4 @@ resonance-testing and input-shaper workflow (`TEST_RESONANCES`, `SHAPER_CALIBRAT
 
 - Patches `/home/lava/klipper/klippy/...`; reverted on uninstall and re-applied after an OTA
   firmware update.
-- Snapmaker U1. Not yet verified on every firmware revision.
+- Snapmaker U1. Installed and running; not re-checked against every firmware revision.
