@@ -15,9 +15,9 @@ Plugins:
 
 Collections (`kind:collection`, no payload of their own, they install a set of plugins in one go):
 
-- **performance-pack** - "Performance Pack": tmc-autotune, tmc-low-current, and purge-line-back.
-  `purge-line-back` ships from the `u1-klipper-config-enhancers` repo; a collection may name a member
-  published by another repo.
+- **performance-pack** - "Performance Pack": klipper-motion, tmc-autotune, tmc-low-current, and
+  purge-line-back. `purge-line-back` ships from the `u1-klipper-config-enhancers` repo; a collection
+  may name a member published by another repo.
 
 ## Layout
 
