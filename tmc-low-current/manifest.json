@@ -42,5 +42,7 @@
     ]
   },
   "conflict_resolutions": [],
-  "files": []
+  "files": [],
+  "license": "https://github.com/Bespok3d/u1-motion-tweaks/blob/dev/tmc-low-current/doc/LICENSE",
+  "attributions": "# Attributions - tmc-low-current\n\n**Plugin author:** @Argolein (Extended Firmware overlay `32-feature-klipper-tweaks`), packaged by Bespok3d\n\nLowers stepper current for quieter running.\n\n| Upstream project | Author | Licence | Needed at runtime | Code ships in this package |\n| --- | --- | --- | --- | --- |\n| Extended Firmware overlay `32-feature-klipper-tweaks` | @Argolein, packaged by paxx12 | GPL-3.0-only | no | yes |\n\nThe Klipper config in this package is the `tmc_current.cfg` tweak from the Extended Firmware overlay\n`32-feature-klipper-tweaks`, GPL-3.0-only, whose TMC driver work is credited to @Argolein. It ships\nhere unchanged, comments and all, and stays under that licence. The licence text and the provenance\nnote are in `vendor/tmc-current-tweak/` at the root of this repository.\n"
 }

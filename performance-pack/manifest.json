@@ -31,5 +31,7 @@
       "id": "purge-line-back",
       "version": ">=0.1.1"
     }
-  ]
+  ],
+  "license": "https://github.com/Bespok3d/u1-motion-tweaks/blob/dev/performance-pack/doc/LICENSE",
+  "attributions": ""
 }

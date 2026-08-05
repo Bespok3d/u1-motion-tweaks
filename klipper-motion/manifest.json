@@ -3,7 +3,7 @@
   "title": "Smoother Motion",
   "version": "0.1.3",
   "author": "bespoked",
-  "license": "GPL-3.0-only",
+  "license": "https://github.com/Bespok3d/u1-motion-tweaks/blob/dev/klipper-motion/doc/LICENSE",
   "description": "Brings your printer's motion engine up to date with the newest Klipper improvements, so prints come out cleaner with nothing to set up.\n\nWhat you get:\n• Less ghosting and ringing: smarter resonance measurement plus a gentle new 'sweeping vibrations' test make input-shaper calibration more accurate, so the faint echo lines after sharp edges shrink.\n• Smoother corners: improved cornering math keeps fast moves accurate and a little quieter.\n• Snappier moves: the motion planner reacts a touch faster, trimming small stutters on detailed models.\n\nWhat you'll notice: cleaner surfaces, fewer ghost marks, and smoother, quieter movement. It just updates the engine under the hood. Advanced users can re-run input-shaper calibration to get the most out of it.\n\nUnder the hood this updates Klipper's own program files on the printer. Uninstalling puts the originals back, and it re-applies itself automatically after a firmware update. Snapmaker U1 only.",
   "tagline": "Cleaner surfaces and quieter moves, from the latest Klipper motion code.",
   "category": "tuning",
@@ -79,5 +79,6 @@
     ]
   },
   "conflict_resolutions": [],
-  "files": []
+  "files": [],
+  "attributions": "# Attributions - klipper-motion\n\n**Plugin author:** Kevin O'Connor, MRX8024 and Dmitry Butyugin (upstream Klipper commits) and paxx12 (Extended Firmware overlay `11-patch-klipper`), packaged by Bespok3d\n\nUpstream Klipper motion fixes the stock firmware predates.\n\n| Upstream project | Author | Licence | Needed at runtime | Code ships in this package |\n| --- | --- | --- | --- | --- |\n| Klipper | Kevin O'Connor and the Klipper contributors | GPL-3.0 | yes | yes |\n| resonance_tester chip selection and accel_per_hz | MRX8024 | GPL-3.0 | yes | yes |\n| resonance_tester sweeping vibrations test | Dmitry Butyugin | GPL-3.0 | yes | yes |\n| Extended Firmware overlay `11-patch-klipper` | paxx12 | GPL-3.0 | no | yes |\n\nThis plugin ships eight patches, applied to the Klipper source on the printer. All eight come from\nthe Extended Firmware overlay `11-patch-klipper`, GPL-3.0-only, and stay under that licence; the\nlicence text and the provenance note are in `vendor/klipper-motion-patches/` at the root of this\nrepository. Five of them ship unchanged, byte for byte, keeping their original author and commit\nmessage. The other three are that overlay's `04_16b4b6b30.patch` split into one file per patched\nfile; each keeps the original header naming Dmitry Butyugin, whose upstream Klipper commit it is, and\nthe hunks inside them are unchanged.\n\nWhat the patches carry is upstream Klipper: commits by Kevin O'Connor, MRX8024 and Dmitry Butyugin.\nThat overlay also carries commits by jimmyjon711. Upstream: https://github.com/Klipper3d/klipper\n\nThe last patch, the Snapmaker-specific fixup, was written by paxx12 for that overlay.\n"
 }
