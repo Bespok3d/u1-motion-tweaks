@@ -11,7 +11,7 @@
   "changelog": "doc/CHANGELOG.md",
   "published_at": "2026-02-10",
   "updated_at": "2026-03-20",
-  "source": "https://github.com/bespok3d-org/plugin-tmc-autotune",
+  "source": "https://github.com/Bespok3d/u1-motion-tweaks",
   "publisher": "PLACEHOLDER",
   "provides": [
     {
