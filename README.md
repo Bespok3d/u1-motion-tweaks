@@ -9,15 +9,17 @@ A co-repo of Bespok3d plugins for the Snapmaker U1 that publishes its own sub-li
 
 Plugins:
 
-- **klipper-motion** - Cleaner surfaces and quieter moves, from the latest Klipper motion code.
 - **tmc-autotune** - Argolein's optimized TMC2240 driver parameters for X/Y.
 - **tmc-low-current** - Cooler, quieter X/Y motion at reduced stepper current.
 
 Collections (`kind:collection`, no payload of their own, they install a set of plugins in one go):
 
+- **klipper-motion** - Cleaner surfaces and quieter moves: installs the U1 Base Layer motion plugins
+  (resonance tester, shaper calibrate, toolhead). A patch plugin through 0.1.3; the base layer owns
+  the patching now.
 - **performance-pack** - "Performance Pack": klipper-motion, tmc-autotune, tmc-low-current, and
   purge-line-back. `purge-line-back` ships from the `u1-klipper-config-enhancers` repo; a collection
-  may name a member published by another repo.
+  may name a member published by another repo, and a member may itself be a collection.
 
 ## Layout
 
@@ -41,8 +43,8 @@ Needs Node.js 20+. Builds run through the shared `Bespok3d/b3-builder` tool:
 
 ```sh
 npm install github:Bespok3d/b3-builder
-npx b3-builder build --source ./klipper-motion --atom-repo Bespok3d/u1-motion-teweaks
-# -> dist/klipper-motion-<ver>.b3 + dist/klipper-motion.atom.json
+npx b3-builder build --source ./tmc-autotune --atom-repo Bespok3d/u1-motion-teweaks
+# -> dist/tmc-autotune-<ver>.b3 + dist/tmc-autotune.atom.json
 ```
 
 Drop `--source` to build every plugin in the repo at once.
@@ -68,11 +70,10 @@ licence.
 
 | Component | Licence | Where its licence text is |
 | --- | --- | --- |
-| The eight Klipper motion patches shipped by `klipper-motion` | GPL-3.0-only | [vendor/klipper-motion-patches/](vendor/klipper-motion-patches/) |
 | The reduced current fragment shipped by `tmc-low-current` | GPL-3.0-only | [vendor/tmc-current-tweak/](vendor/tmc-current-tweak/) |
 
-Both ship at their package path under `<plugin>/files` rather than under `vendor/`, because that is
-the fixed package payload root; each `vendor/` directory records where its files are and what, if
+It ships at its package path under `<plugin>/files` rather than under `vendor/`, because that is the
+fixed package payload root; the `vendor/` directory records where its files are and what, if
 anything, Bespok3d changed in them.
 
 The `tmc-autotune` config carries 38 TMC2240 parameter values that are not Bespok3d's. They reached

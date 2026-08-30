@@ -3,8 +3,8 @@
 Backports several upstream Klipper motion improvements to the U1's Klipper, for smoother
 moves and better input-shaper tuning.
 
-> **Version-sensitive.** This patches Klipper source files. It targets a specific Klipper
-> version; if your Klipper differs, the plugin may not apply cleanly.
+> **Version-sensitive.** The U1 Base Layer plugins this one asks for patch Klipper source files on
+> the printer, one fragment per firmware generation. Firmware 1.3.0, 1.4.0 and 1.5.0 fit.
 
 ## What it brings
 
@@ -14,7 +14,8 @@ moves and better input-shaper tuning.
 
 ## Using it
 
-Install the plugin; Klipper restarts and the new behavior is active. Use the standard
+Install the plugin; the three U1 Base Layer motion plugins it asks for come with it, Klipper
+restarts and the new behavior is active. Use the standard
 resonance-testing and input-shaper workflow (`TEST_RESONANCES`, `SHAPER_CALIBRATE`).
 
 ## Notes
