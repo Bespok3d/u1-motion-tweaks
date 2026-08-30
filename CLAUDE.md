@@ -12,19 +12,21 @@ If you are a non-Claude tool, `AGENTS.md` points you here.
 ## What this repo ships
 
 u1-motion-tweaks is a co-repo of Bespok3d plugins for the Snapmaker U1 that publishes its own sub-list.
-It ships three plugins:
+It ships two plugins:
 
-- **klipper-motion** - Cleaner surfaces and quieter moves, from the latest Klipper motion code.
 - **tmc-autotune** - Argolein's optimized TMC2240 driver parameters for X/Y.
 - **tmc-low-current** - Cooler, quieter X/Y motion at reduced stepper current.
 
-All three are Klipper config and patches, assets and shell only; this repo carries no Python.
+Both are Klipper config, assets and shell only; this repo carries no Python.
 
-It also ships one collection (`kind:collection`, a members list with no payload of its own):
+It also ships two collections (`kind:collection`, a members list with no payload of its own):
 
+- **klipper-motion** - Cleaner surfaces and quieter moves: the U1 Base Layer motion plugins
+  (u1-base-resonance-tester, u1-base-shaper-calibrate, u1-base-toolhead). It was a patch plugin
+  through 0.1.3; since 0.1.4 the base layer owns the patching and this is the set that installs it.
 - **performance-pack** - "Performance Pack": klipper-motion, tmc-autotune, tmc-low-current, and
-  purge-line-back (the last one lives in the `u1-klipper-config-enhancers` repo; a collection may name
-  a member from another repo).
+  purge-line-back (the last one lives in the `u1-klipper-config-enhancers` repo; a collection may
+  name a member from another repo, and a member may itself be a collection - klipper-motion is one).
 
 Read `README.md` for the repo's layout, build, and release mechanics before you change anything.
 
