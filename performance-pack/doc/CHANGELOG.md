@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.1 (unreleased)
+## 0.2.1 - 2026-11-05
 
 - Asks for Smoother Motion 0.1.5 or newer, the version that installs the three U1 Base Layer motion
   plugins instead of patching the printer's files itself. The older one fails on Snapmaker firmware

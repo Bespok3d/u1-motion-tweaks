@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.5 (unreleased)
+## 0.1.5 - 2026-11-05
 
 - The first release of Smoother Motion as a set of three U1 Base Layer plugins to reach the store.
   0.1.4 made that change but was never published, so the store kept offering 0.1.3, which patches
