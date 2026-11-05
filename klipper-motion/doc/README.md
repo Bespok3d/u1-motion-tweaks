@@ -4,7 +4,8 @@ Backports several upstream Klipper motion improvements to the U1's Klipper, for 
 moves and better input-shaper tuning.
 
 > **Version-sensitive.** The U1 Base Layer plugins this one asks for patch Klipper source files on
-> the printer, one fragment per firmware generation. Firmware 1.3.0, 1.4.0 and 1.5.0 fit.
+> the printer, one fragment per firmware generation. Their own pages list the firmware they fit;
+> on firmware 2.1 U1 Base resonance tester needs to be 0.1.1 or newer.
 
 ## What it brings
 
