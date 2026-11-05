@@ -2,7 +2,7 @@
   "kind": "collection",
   "name": "klipper-motion",
   "title": "Smoother Motion",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "bespoked",
   "description": "Brings your printer's motion engine up to date with the newest Klipper improvements, so prints come out cleaner with nothing to set up.\n\nWhat you get:\n• Less ghosting and ringing: smarter resonance measurement plus a gentle new 'sweeping vibrations' test make input-shaper calibration more accurate, so the faint echo lines after sharp edges shrink.\n• Smoother corners: improved cornering math keeps fast moves accurate and a little quieter.\n• Snappier moves: the motion planner reacts a touch faster, trimming small stutters on detailed models.\n\nWhat you'll notice: cleaner surfaces, fewer ghost marks, and smoother, quieter movement. Advanced users can re-run input-shaper calibration to get the most out of it.\n\nSmoother Motion is a collection: installing it installs the three U1 Base Layer plugins that carry the motion updates (resonance tester, shaper calibrate, toolhead). Uninstalling those puts the printer's original files back, and they re-apply themselves automatically after a firmware update. Snapmaker U1 only.",
   "tagline": "Cleaner surfaces and quieter moves, from the latest Klipper motion code.",
@@ -12,12 +12,12 @@
   "source": "https://github.com/Bespok3d/u1-motion-tweaks",
   "publisher": "PLACEHOLDER",
   "published_at": "2026-04-10",
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-11-05",
   "changelog": "doc/CHANGELOG.md",
   "members": [
     {
       "id": "u1-base-resonance-tester",
-      "version": ">=0.1.0"
+      "version": ">=0.1.1"
     },
     {
       "id": "u1-base-shaper-calibrate",
@@ -30,7 +30,7 @@
   ],
   "migration": {
     "from_version": "0.1.3",
-    "summary": "Smoother Motion used to change your printer's Klipper files itself. From 0.1.4 the printer's base layer does that instead, so Smoother Motion is now a set of three plugins. The old one has to come off before the three can go on."
+    "summary": "Smoother Motion used to change your printer's Klipper files itself. From 0.1.5 the printer's base layer does that instead, so Smoother Motion is now a set of three plugins. The old one has to come off before the three can go on."
   },
   "license": "https://github.com/Bespok3d/u1-motion-tweaks/blob/dev/klipper-motion/doc/LICENSE",
   "attributions": "# Attributions - klipper-motion\n\n**Collection author:** Bespok3d\n\nThis collection ships no code of its own. The eight motion patches it used to apply now live in the\nU1 Base Layer plugins `u1-base-resonance-tester`, `u1-base-toolhead` and `u1-base-shaper-calibrate`,\nwhich are this collection's members. Their authors, their licences and the provenance note are\nrecorded there, in the `u1-base` repository.\n\n| Upstream project | Author | Licence | Needed at runtime | Code ships in this package |\n| --- | --- | --- | --- | --- |\n| Klipper | Kevin O'Connor and the Klipper contributors | GPL-3.0 | yes | no |\n"
